@@ -23,6 +23,8 @@
   --border-grey: #EAEAEA;
   --price-grey: #A9A9A9;
   --special-grey: #F3F7F9;
+  --special-beige: #F7F3EC;
+  --special-greylight: #B5B5B5;
 }
 
 /*Global*/
@@ -70,6 +72,11 @@ img {
 .main-header__search {
   background-color: var(--basic-dark);
   border: none;
+  color: var(--basic-white);
+}
+
+.main-header__search::placeholder {
+  color: var(--basic-white);
 }
 
 .main-header__buy {
@@ -568,4 +575,162 @@ img {
   background-color: var(--basic-red);
   color: var(--basic-white);
   text-transform: uppercase;
+}
+
+/**********************************************************
+***********************************************************
+**************************КАТАЛОГ**************************
+***********************************************************
+***********************************************************/
+
+.inner-page {}
+
+.user-navigation__profile {
+  font-size: 21px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.user-navigation__profil:hover, .user-navigation__profile:focus {}
+
+.user-navigation__profile:active {
+  color: var(--basic-greylight);
+}
+
+.user-navigation__item {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-dark);
+}
+
+.user-navigation__item:hover, .user-navigation__item:focus {
+  color: var(--basic-red);
+}
+
+.user-navigation__item:active {
+  color: var(--basic-greylight);
+}
+
+.breadcrums {
+  list-style: none;
+}
+
+.breadcrums__item {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: inherit;
+  /*Позднее добавить иконки-маркеры ">"*/
+}
+
+.breadcrums__item--home {
+  /*Здесь будет иконка домика*/
+}
+
+.perforators {
+  background-color: var(--basic-background);
+}
+
+.perforators__title {
+  color: var(--special-dark);
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/*ФИЛЬТР ТОВАРОВ*/
+
+.form-item__price {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: var(--special-beige);
+}
+
+.line {
+  width: 220px;
+  height: 80px;
+  background-color: var(--special-beige);
+}
+
+.product-filter__text, .sorting__title, .sorting__item {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-item__title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form-item__text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.form-list {
+  list-style: none;
+}
+
+/*СОРТИРОВКА*/
+
+.sorting {
+  background-color: var(--special-beige);
+}
+
+.sorting__list {
+  list-style: none;
+}
+
+.sorting__button {
+  border: none;
+  background-color: inherit;
+  text-transform: uppercase;
+}
+
+.sorting__button:hover, .sorting__button:focus {
+  text-decoration: underline var(--basic-red);
+}
+
+.sorting__button:active {
+  color: var(--basic-red);
+  text-decoration: none;
+}
+
+/*ПАГИНАЦИЯ*/
+
+.pagination__list {
+  list-style: none;
+}
+
+.pages__text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.perforators-description {
+  background-color: var(--basic-background);
+}
+
+.perforators-description__title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.perforators-description__text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
