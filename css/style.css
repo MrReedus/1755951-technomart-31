@@ -749,6 +749,27 @@ img {
 ***********************************************************
 ***********************************************************/
 
+.page-catalog {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas: "breadcrums breadcrums" "perforators perforators" "filter sorting" "filter products" "pagination pagination" "description description";
+  width: 940px;
+  margin: 0 auto;
+}
+
+.products {
+  grid-area: products;
+  margin-left: 20px;
+}
+
+.perforators {
+  grid-area: perforators;
+}
+
+.pagination {
+  grid-area: pagination;
+}
+
 .user-navigation__profile {
   font-size: 21px;
   line-height: 21px;
@@ -777,6 +798,9 @@ img {
 
 .breadcrums {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .breadcrums__item {
@@ -793,7 +817,9 @@ img {
 }
 
 .perforators {
+  height: 89px;
   background-color: var(--basic-background);
+  margin-bottom: 20px;
 }
 
 .perforators__title {
@@ -802,6 +828,10 @@ img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  padding-left: 29px;
+  padding-top: 29px;
+  padding-bottom: 30px;
 }
 
 /*ФИЛЬТР ТОВАРОВ*/
@@ -814,8 +844,6 @@ img {
 }
 
 .line {
-  width: 220px;
-  height: 80px;
   background-color: var(--special-beige);
 }
 
@@ -824,6 +852,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  background-color: var(--special-beige);
 }
 
 .form-item__title {
@@ -839,6 +868,8 @@ img {
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .form-list {
@@ -848,11 +879,24 @@ img {
 /*СОРТИРОВКА*/
 
 .sorting {
+  grid-area: sorting;
   background-color: var(--special-beige);
+  margin-bottom: 28px;
+}
+
+.product-filter {
+  grid-area: filter;
+}
+
+.sorting__title {
+  padding: 0;
+  margin: 0;
 }
 
 .sorting__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sorting__button {
@@ -885,6 +929,7 @@ img {
 }
 
 .perforators-description {
+  grid-column: 1/-1;
   background-color: var(--basic-background);
 }
 
