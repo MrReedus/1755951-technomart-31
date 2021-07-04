@@ -43,19 +43,20 @@
           <a class="user-navigation__login" href="">Войти</a>
           <a class="user-navigation__register" href="">Регистрация</a>
         </div>
-
-        <nav class="main-navigation main-navigation--center">
-          <ul class="site-navigation">
-            <li><a class="site-navigation__item" href="">Главная</a></li>
-            <li><a class="site-navigation__item" href="">Компания</a></li>
-            <li><a class="site-navigation__item" href="catalog.html">Каталог</a></li>
-            <li><a class="site-navigation__item" href="">Новости</a></li>
-            <li><a class="site-navigation__item" href="">Спецпредложения</a></li>
-            <li><a class="site-navigation__item" href="">Доставка</a></li>
-            <li><a class="site-navigation__item" href="">Контакты</a></li>
-          </ul>
-        </nav>
       </div>
+
+      <nav class="main-navigation wrapper">
+        <ul class="site-navigation">
+          <li><a class="site-navigation__item" href="">Главная</a></li>
+          <li><a class="site-navigation__item" href="">Компания</a></li>
+          <li><a class="site-navigation__item" href="catalog.html">Каталог</a></li>
+          <li><a class="site-navigation__item" href="">Новости</a></li>
+          <li><a class="site-navigation__item" href="">Спецпредложения</a></li>
+          <li><a class="site-navigation__item" href="">Доставка</a></li>
+          <li><a class="site-navigation__item" href="">Контакты</a></li>
+        </ul>
+      </nav>
+
     </div>
   </header>
 
@@ -114,8 +115,8 @@
           <a class="button popular-header__button" href="#">Все популярные товары</a>
           <!-- одинаковая кнопка -->
         </div>
-        <ul class="products">
-          <li class="products__item">
+        <div class="products">
+          <div class="products__item product1">
             <a class="products__item-link" href="#">
               <h3 class="products__name">Перфоратор BOSCH BFG 9000</h3>
               <p class="products__image">
@@ -129,8 +130,8 @@
               <button class="appear-buttons__bookmarks" type="button">В закладки</button>
             </div>
             <!-- появляется при наведении на карточку товара заменяя изображение  -->
-          </li>
-          <li class="products__item">
+          </div>
+          <div class="products__item product2">
             <a class="products__item-link" href="#">
               <h3 class="products__name">Перфоратор BOSCH BFG 3000</h3>
               <p class="products__image">
@@ -144,8 +145,8 @@
               <button class="appear-buttons__bookmarks" type="button">В закладки</button>
             </div>
             <!-- появляется при наведении на карточку товара заменяя изображение  -->
-          </li>
-          <li class="products__item">
+          </div>
+          <div class="products__item product3">
             <a class=" products__item-link" href="">
               <h3 class="products__name">Перфоратор BOSCH BFG 6000</h3>
               <p class="products__image">
@@ -159,8 +160,8 @@
               <button class="appear-buttons__bookmarks" type="button">В закладки</button>
             </div>
             <!-- появляется при наведении на карточку товара заменяя изображение  -->
-          </li>
-          <li class="products__item">
+          </div>
+          <div class="products__item product4">
             <a class="products__item-link" href="">
               <h3 class="products__name">Перфоратор BOSCH BFG 2000</h3>
               <p class="products__image">
@@ -174,8 +175,8 @@
               <button class="appear-buttons--buy" type="button">В закладки</button>
             </div>
             <!-- появляется при наведении на карточку товара заменяя изображение  -->
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
 
       <section class="popular-brands">
@@ -273,15 +274,15 @@
         </div>
       </div>
     </section>
-    <div class="info-center">
-      <section class="info">
+
+    <section class="info wrapper">
+      <div class="info__description">
         <h2 class="info__title">Компания «Техномарт»</h2>
         <p class="info__text">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
           ремонта и строительства не оставит равнодушными любителей сэкономить
           на<br> гастарбайтерах.
         </p>
-
         <p class="info__text">
           Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:
@@ -292,55 +293,54 @@
           <li class="companions__item">ЖелДорЭкспедиция</li>
         </ul>
         <a class="companions__button" href="#">Подробнее о компании</a>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
+      </div>
+      <div class="contacts">
+        <h2 class="info__title">Контакты</h2>
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис</p>
         <!-- здесь будет карта -->
         <a class="contacts__map" href="#"><img src="img/map.jpg" width="300" height="158"
             alt="Карта офиса по адресу наб. Реки Карповки, 5 лит П" />
         </a>
         <button class="contacts__button" type="button">Заблудились?Напишите нам!</button>
-      </section>
-    </div>
-
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">
-
     <div class="footer-top">
       <div class="footer-top__wrapper">
-
-        <a class="main-footer__logo" href="">
-          <img src="img/logo-tehnomart.svg" width="180" height="23" alt="логотип техномарт" />
-        </a>
-        <p class="main-footer__text">
-          г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
-          +7 800 555-86-28
-        </p>
-
+        <div class="footer-top__info">
+          <a class="main-footer__logo" href="">
+            <img src="img/logo-tehnomart.svg" width="180" height="23" alt="логотип техномарт" />
+          </a>
+          <p class="main-footer__text">
+            г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+            +7 800 555-86-28
+          </p>
+        </div>
         <section class="footer-navigation">
           <ul class="footer-navigation__list top-navigation">
-            <li><a class="top-navigation__item" href="#">Компания</a></li>
-            <li><a class="top-navigation__item" href="#">Новости</a></li>
-            <li><a class="top-navigation__item" href="#">Каталог</a></li>
-            <li><a class="top-navigation__item" href="#">Доставка</a></li>
-            <li><a class="top-navigation__item" href="#">Контакты</a></li>
+            <li class="top-navigation__item"><a class="top-navigation__link" href=" #">Компания</a></li>
+
+            <li class="top-navigation__item"><a class="top-navigation__link" href="#">Новости</a></li>
+            <li class="top-navigation__item"><a class="top-navigation__link" href="#">Каталог</a></li>
+            <li class="top-navigation__item"><a class="top-navigation__link" href=" #">Доставка</a></li>
+            <li class="top-navigation__item"><a class="top-navigation__link" href=" #">Контакты</a></li>
           </ul>
           <ul class="footer-navigation__list bottom-navigation">
-            <li><a class="bottom-navigation__item" href="#">Материалы</a></li>
-            <li><a class="bottom-navigation__item" href="#">Техника</a></li>
-            <li><a class="bottom-navigation__item" href="#">Инструмент</a></li>
-            <li><a class="bottom-navigation__item" href="#">Спецпредложения</a></li>
+            <li class="bottom-navigation__item"><a class="bottom-navigation__link" href="#">Материалы</a></li>
+
+            <li class="bottom-navigation__item"><a class="bottom-navigation__link" href="#">Техника</a></li>
+
+            <li class="bottom-navigation__item"><a class="bottom-navigation__link" href="#">Инструмент</a></li>
+            <li class="bottom-navigation__item"><a class="bottom-navigation__link" href="#">Спецпредложения</a></li>
           </ul>
         </section>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="footer-bottom__wrapper">
-        <div class="copyright">
-          <p class="footer-bottom__copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
-        </div>
+        <p class="footer-bottom__copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
         <section class="footer-social">
           <h2 class="none">Мы в соцсетях</h2>
           <ul class="social">
@@ -349,11 +349,11 @@
             <li><a class="social__button social__button--insta" href="#">Инстаграм</a></li>
           </ul>
         </section>
-        <p class="footer-info__text">
+        <p class="footer-info__text footer-info__text--feedback">
           Обратная связь:
           <a class="footer-info__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="footer-info__text">
+        <p class="footer-info__text footer-info__text--develop">
           Разработано -
           <a class="footer-info__email" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
