@@ -14,9 +14,8 @@
 
 <body class="page-body">
   <header class="main-header">
-
     <div class="header-top">
-      <div class="header-top__center">
+      <div class="header-top__container wrapper">
         <a class="main-header__logo">
           <img src="img/logo-tehnomart.svg" width="108" height="18" alt="логотип техномарт">
         </a>
@@ -29,10 +28,10 @@
       </div>
     </div>
     <div class="header-bottom">
-      <div class="header-bottom__center">
+      <div class="header-bottom__container wrapper">
         <p class="header-bottom__description">
           Интернет-магазин
-          строительных материалов
+          строительных материалов <br>
           и инструментов для ремонта
         </p>
         <div class="header-bottom__info">
@@ -116,12 +115,13 @@
           <!-- одинаковая кнопка -->
         </div>
         <div class="products">
-          <div class="products__item product1">
+          <div class="products__item">
             <a class="products__item-link" href="#">
               <h3 class="products__name">Перфоратор BOSCH BFG 9000</h3>
-              <p class="products__image">
-                <img src="img/product1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-              </p>
+              <div class="image-container">
+                <img class="products__image" src="img/product1.jpg" width="184" height="164"
+                  alt="Перфоратор BOSCH BFG 9000">
+              </div>
               <p class="products__price">32500 Р.</p>
             </a>
             <button class="products__button" type="button">25500 Р.</button>
@@ -131,12 +131,13 @@
             </div>
             <!-- появляется при наведении на карточку товара заменяя изображение  -->
           </div>
-          <div class="products__item product2">
+          <div class="products__item">
             <a class="products__item-link" href="#">
               <h3 class="products__name">Перфоратор BOSCH BFG 3000</h3>
-              <p class="products__image">
-                <img src="img/product2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-              </p>
+              <div class="image-container">
+                <img class="products__image" src="img/product2.jpg" width="127" height="112"
+                  alt="Перфоратор BOSCH BFG 3000">
+              </div>
               <p class="products__price">22500 Р.</p>
             </a>
             <button class="products__button" type="button">15500 Р.</button>
@@ -146,12 +147,13 @@
             </div>
             <!-- появляется при наведении на карточку товара заменяя изображение  -->
           </div>
-          <div class="products__item product3">
+          <div class="products__item">
             <a class=" products__item-link" href="">
               <h3 class="products__name">Перфоратор BOSCH BFG 6000</h3>
-              <p class="products__image">
-                <img src="img/product3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-              </p>
+              <div class="image-container">
+                <img class="products__image" src="img/product3.jpg" width="144" height="128"
+                  alt="Перфоратор BOSCH BFG 6000">
+              </div>
               <p class="products__price">30500 Р.</p>
             </a>
             <button class="products__button" type="button">25500 Р.</button>
@@ -161,12 +163,13 @@
             </div>
             <!-- появляется при наведении на карточку товара заменяя изображение  -->
           </div>
-          <div class="products__item product4">
+          <div class="products__item">
             <a class="products__item-link" href="">
               <h3 class="products__name">Перфоратор BOSCH BFG 2000</h3>
-              <p class="products__image">
-                <img src="img/product4.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-              </p>
+              <div class="image-container">
+                <img class="products__image" src="img/product4.jpg" width="127" height="112"
+                  alt="Перфоратор BOSCH BFG 2000">
+              </div>
               <p class="products__price">22500 Р.</p>
             </a>
             <button class="products__button" type="button">12500 Р.</button>
@@ -195,11 +198,13 @@
                 height="40" alt="логотип makita">
             </a>
           </li>
+
           <li class="brands-list__item">
             <a class="brands-list__logo" href="#"><img class="brands-list__image" src="img/brand3.png" width="146"
                 height="44" alt="логотип dewalt">
             </a>
           </li>
+
           <li class="brands-list__item">
             <a class="brands-list__logo" href="#"><img class="brands-list__image" src="img/brand4.png" width="200"
                 height="76" alt="логотип интерскол">
@@ -210,6 +215,7 @@
               <img class="brands-list__image" src="img/brand5.png" width="169" height="31" alt="логотип hitachi">
             </a>
           </li>
+
           <li class="brands-list__item">
             <a class="brands-list__logo" href="#">
               <img class="brands-list__image" src="img/brand6.png" width="121" height="73" alt="логотип LG">
@@ -308,7 +314,7 @@
 
   <footer class="main-footer">
     <div class="footer-top">
-      <div class="footer-top__wrapper">
+      <div class="footer-top__container wrapper">
         <div class="footer-top__info">
           <a class="main-footer__logo" href="">
             <img src="img/logo-tehnomart.svg" width="180" height="23" alt="логотип техномарт" />
@@ -339,7 +345,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-bottom__wrapper">
+      <div class="footer-bottom__container wrapper">
         <p class="footer-bottom__copyright">© 2010–2021 Компания «Техномарт» Все права защищены</p>
         <section class="footer-social">
           <h2 class="none">Мы в соцсетях</h2>

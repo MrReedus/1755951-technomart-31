@@ -68,18 +68,14 @@ img {
   height: 100%;
 }
 
-.header-top__center {
-  width: 940px;
-  margin: 0 auto;
+.header-top__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 42px;
 }
 
-.header-bottom__center {
-  width: 940px;
-  margin: 0 auto;
+.header-bottom__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,6 +90,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
+  margin-bottom: 59px;
 }
 
 .header-top {
@@ -148,7 +145,6 @@ img {
 
 .header-bottom {
   background-color: var(--basic-background);
-  margin-bottom: 69px;
 }
 
 .header-bottom__description {
@@ -361,33 +357,14 @@ img {
   display: flex;
 }
 
-.products__image {
-  margin: 0;
-  order: -2;
-}
-
-.product1 .products__image {
-  width: 184px;
+.image-container {
+  order: -1;
+  width: 100%;
   height: 164px;
-  padding: 6px 18px 8px 18px;
-}
-
-.product2 .products__image {
-  width: 127px;
-  height: 112px;
-  padding: 29px 53px 38px 40px;
-}
-
-.product3 .products__image {
-  width: 144px;
-  height: 128px;
-  padding: 22px 43px 28px 33px;
-}
-
-.product4 .products__image {
-  width: 127px;
-  height: 112px;
-  padding: 29px 53px 38px 40px
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 .popular-header__title {
@@ -524,15 +501,18 @@ img {
 
 /*Популярные производители*/
 
+.popular-brands {
+  margin-bottom: 70px;
+}
+
 .brands-list {
   list-style: none;
   display: grid;
-  grid-template-columns: 220px 220px 220px 220px;
-  grid-template-rows: 145px 145px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-auto-rows: 145px;
   gap: 20px;
   padding: 0;
   margin: 0;
-  margin-bottom: 70px;
 }
 
 .brands-list__item {
@@ -764,9 +744,7 @@ img {
   height: 193px;
 }
 
-.footer-top__wrapper {
-  width: 940px;
-  margin: 0 auto;
+.footer-top__container {
   display: flex;
   justify-content: space-between;
 }
@@ -803,9 +781,7 @@ img {
   margin-right: 0;
 }
 
-.footer-bottom__wrapper {
-  width: 940px;
-  margin: 0 auto;
+.footer-bottom__container {
   display: flex;
   align-items: center;
   height: 107px;
