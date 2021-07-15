@@ -38,7 +38,7 @@
       <div class="header-bottom__container wrapper">
         <p class="header-bottom__description">
           Интернет-магазин
-          строительных материалов <br>
+          строительных материалов
           и инструментов для ремонта
         </p>
         <div class="header-bottom__info">
@@ -110,7 +110,17 @@
             </div>
             <div class="slider-controls">
               <button class="slider-controls__button" aria-label="первый слайд" type="button"></button>
-              <button class="slider-controls__button" aria-label="второй слайд" type="button"></button>
+              <button class="slider-controls__button slider-controls__button--current" aria-label="второй слайд" type="button"></button>
+            </div>
+            <div class="toggles">
+              <button class="slider__toggle slider__toggle--back" aria-label="предыдущий слайд"><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9244 0.941467L21.9225 2.98927L4.90696 20.4361L21.978 37.9376L19.9789 39.9854L0.910614 20.4361L19.9244 0.941467Z" fill="white" />
+                </svg>
+              </button>
+              <button class="slider__toggle slider__toggle--next" aria-label="следующий слайд"><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.07568 39.0585L0.0775054 37.0107L17.0931 19.5639L0.0220266 2.06243L2.02116 0.0146289L21.0894 19.5639L2.07568 39.0585Z" fill="white" />
+                </svg>
+              </button>
             </div>
           </li>
         </ul>
@@ -122,7 +132,7 @@
           <a class="button popular-header__button" href="#">Все популярные товары</a>
         </div>
         <div class="products">
-          <div class="product new-item">
+          <div class="product ">
             <a class="product__link" href="#">
               <h3 class="product__name">Перфоратор BOSCH BFG 9000</h3>
               <div class="image-container">
@@ -136,7 +146,7 @@
               <button class="button-buy product__button--bookmarks" type="button">В закладки</button>
             </div>
           </div>
-          <div class="product">
+          <div class="product new-item">
             <a class="product__link" href="#">
               <h3 class="product__name">Перфоратор BOSCH BFG 3000</h3>
               <div class="image-container">
@@ -275,12 +285,12 @@
     <section class="info wrapper">
       <div class="info__description">
         <h2 class="info__title">Компания «Техномарт»</h2>
-        <p class="info__text">
+        <p class="info__text info__text--slogan">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
           ремонта и строительства не оставит равнодушными любителей сэкономить
           на<br> гастарбайтерах.
         </p>
-        <p class="info__text">
+        <p class="info__text info__text--companions">
           Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:
         </p>
@@ -296,7 +306,7 @@
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис</p>
         <a class="contacts__map" href="#"><img src="img/map.jpg" width="300" height="158" alt="Карта офиса по адресу наб. Реки Карповки, 5 лит П" />
         </a>
-        <button class="contacts__button" type="button">Заблудились?Напишите нам!</button>
+        <button class="contacts__button" type="button">Заблудились? Напишите нам!</button>
       </div>
     </section>
   </main>
