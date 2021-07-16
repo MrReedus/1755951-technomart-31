@@ -160,11 +160,11 @@ img {
   padding-left: 42px;
 }
 
-.search__label:hover .search__icon {
+.search__input:hover+.search__icon {
   opacity: 1;
 }
 
-.search__input:focus+.search__label .search__icon {
+.search__input:focus+.search__icon {
   fill: var(--basic-red);
   opacity: 1;
 }
@@ -239,7 +239,7 @@ img {
   opacity: 0.3;
 }
 
-.main-header__bookmarks:active .main-header__bookmarks::before, .main-header__basket::before .main-header__basket:active {
+.main-header__bookmarks:active .main-header__bookmarks::before, .main-header__basket::before.main-header__basket:active {
   opacity: 0.3;
 }
 
