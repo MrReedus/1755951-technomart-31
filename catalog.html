@@ -372,6 +372,40 @@
       </div>
     </div>
   </footer>
+  <section class="visually-hidden modal modal-visible modal-contact ">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="modal-contact__inputs">
+        <div class="modal-contact__item"> <label class="feedback-form__label" for="fistname-lastname">Ваше имя</label>
+          <input class="feedback-form__input" type="text" name="firstname and lastname" id="fistname-lastname" placeholder="Имя Фамилия" />
+        </div>
+        <div class="modal-contact__item"><label class="feedback-form__label" for="email-email">Ваш e-mail</label>
+          <input class="feedback-form__input" type="email" name="email" id="email-email" placeholder="email@example.com" />
+        </div>
+        <div class="modal-contact__item modal-contact__item--questions"> <label class="feedback-form__label" for="message-message">Текст письма</label><br>
+          <textarea class="feedback-form__input feedback-form__input--questions" name="message" id="message-message" placeholder="В свободной форме"></textarea>
+        </div>
+      </div>
+      <div class="modal-contact__button">
+        <button class="feedback-form__button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="modal-contact__close close-button" aria-label="закрыть"></button>
+  </section>
+
+  <section class=" visually-hidden modal modal-order modal-visible">
+    <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+    <div class="modal-order__container">
+      <p class="modal-order__info">Товар добавлен в корзину!</p>
+    </div>
+    <div class="modal-order__buttons modal-buttons">
+      <a class="modal-buttons__pay button ">оформить заказ</a>
+      <button class="modal-buttons__close  button button--white">Продолжить покупки</button>
+    </div>
+    <button class=" modal-order__close close-button ">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
 </body>
 
 </html>
